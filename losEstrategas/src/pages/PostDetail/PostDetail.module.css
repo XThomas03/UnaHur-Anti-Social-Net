@@ -1,0 +1,97 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 3px solid #53ac59;
+    border-radius: 10px;
+    background-color: #e8f0e6;
+    margin-top: 30px
+}
+
+.post {
+    border-left: 3px solid #53ac59;
+    height: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tag {
+    background-color: #53ac59;
+    padding: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.postSinImagen {
+    border: 3px solid #53ac59;
+    background-color: #e8f0e6;
+    height: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.comentarioBubble {
+  background: #53ac59;
+  border-radius: 20px;
+  padding: 12px 18px;
+  margin: 10px 0;
+  display: inline-block;
+  position: relative;
+  max-width: 80%;
+  font-size: 18px;
+  border: 2px solid #53ac59;
+}
+
+/* Triángulo de la burbuja */
+.comentarioBubble::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid #53ac59;
+  border-bottom: 0;
+}
+
+.form {
+    border-radius: 15px;
+    width: 100%;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+ color: black !important;
+}
+
+@media (max-width: 990px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prueba {
+        border-left: 0px none;
+        border-top: 3px solid #53ac59;
+    }
+}
+.cardImg {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.cardImgPlaceholder {
+  height: 200px;
+  background-color: #d3d3d3; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
